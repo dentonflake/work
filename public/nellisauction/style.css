@@ -1,0 +1,22 @@
+#dashboard {
+    width: 100%;
+    max-width: 1000px;
+
+    grid-template-columns: 1fr 2fr;
+}
+
+#processing-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#processing-grid .button {
+    background-color: rgb(175, 75, 75)  ;
+}
+
+@media only screen and (max-width: 875px) {
+    #dashboard {
+        max-width: none;
+
+        grid-template-columns: 1fr;
+    }
+}
