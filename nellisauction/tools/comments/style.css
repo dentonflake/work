@@ -2,3 +2,22 @@
     width: 100%;
     max-width: 1000px;
 }
+
+#comment .grid-item-content {
+    grid-template-columns: 1fr;
+}
+
+#comment .grid-item-content .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: none;
+    padding: 10px;
+    background-color: rgba(230, 230, 230, 1);
+}
+
+#comment .button {
+    background-color: gold;
+}
+
+#tags .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+}

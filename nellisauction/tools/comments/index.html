@@ -26,20 +26,30 @@
     <main>
 
         <div class="grid-container" id="dashboard">
-            <div class="grid-item" id="comments">
+            <div class="grid-item" id="comment">
                 <div class="grid-item-title">
-                    <h2>Quick Comments</h2>
+                    <h2>Custom Comment</h2>
                 </div>
                 <div class="grid-item-content grid-container">
-                    <div onclick="handleCopy(this)" class="grid-item button">**NON-REFUNDABLE**</div>
-                    <div onclick="handleCopy(this)" class="grid-item button">**PARTS ONLY**</div>
-                    <div onclick="handleCopy(this)" class="grid-item button">**DAMAGED**</div>
-                    <div onclick="handleCopy(this)" class="grid-item button">**SEE NOTES**</div>
-                    <div onclick="handleCopy(this)" class="grid-item button">**FACTORY SEALED**</div>
-                    <div onclick="handleCopy(this)" class="grid-item button">**ITEM IS DIFFERENT FROM STOCK PHOTO**</div>
-                    <div onclick="handleCopy(this)" class="grid-item button">**TRUCK/TRAILER PICK UP ONLY**</div>
-                    <div onclick="handleCopy(this)" class="grid-item button">**TESTED FOR POWER, UNABLE TO TEST  FURTHER FUNCTIONS**</div>
-                    <div onclick="handleCopy(this)" class="grid-item button">**(EXP: ) NON-REFUNDABLE**</div>
+                    <div class="grid-item grid-container" id="builder">
+                    </div>
+                    <div onclick="handleCopy()" class="grid-item button">Copy</div>
+                </div>
+            </div>
+            <div class="grid-item" id="tags">
+                <div class="grid-item-title">
+                    <h2>Tags</h2>
+                </div>
+                <div class="grid-item-content grid-container">
+                    <div onclick="handleAdd(this)" class="grid-item button">NON-REFUNDABLE</div>
+                    <div onclick="handleAdd(this)" class="grid-item button">PARTS ONLY</div>
+                    <div onclick="handleAdd(this)" class="grid-item button">DAMAGED**</div>
+                    <div onclick="handleAdd(this)" class="grid-item button">SEE NOTES</div>
+                    <div onclick="handleAdd(this)" class="grid-item button">FACTORY SEALED</div>
+                    <div onclick="handleAdd(this)" class="grid-item button">ITEM IS DIFFERENT FROM STOCK PHOTO</div>
+                    <div onclick="handleAdd(this)" class="grid-item button">TRUCK/TRAILER PICK UP ONLY</div>
+                    <div onclick="handleAdd(this)" class="grid-item button">TESTED FOR POWER, UNABLE TO TEST  FURTHER FUNCTIONS</div>
+                    <div onclick="handleAdd(this)" class="grid-item button">(EXP: ) NON-REFUNDABLE</div>
                 </div>
             </div>
         </div>
@@ -51,12 +61,7 @@
         </a>
     </footer>
 
-    <script>
-        function handleCopy(element) {
-            var text = element.textContent;
-            navigator.clipboard.writeText(text);
-        }
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
