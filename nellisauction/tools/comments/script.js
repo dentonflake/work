@@ -10,11 +10,16 @@ function handleCopy() {
     parent.innerHTML = 'Copied!'
 }
 
+function handleRemove(event) {
+    
+}
+
 function handleAdd(element) {
     let tag = document.createElement('div')
     tag.textContent = element.textContent
     tag.classList.add('grid-item')
-    tag.classList.add('tag')
+    tag.classList.add('button')
+    tag.addEventListener('mousedown', handleRemove)
 
     let parent = document.getElementById('builder');
 

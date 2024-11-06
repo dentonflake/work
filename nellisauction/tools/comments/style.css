@@ -10,11 +10,11 @@
 #comment .grid-item-content .grid-container {
     grid-template-columns: repeat(2, 1fr);
     box-shadow: none;
-    padding: 10px;
-    background-color: rgba(230, 230, 230, 1);
+    /* padding: 10px;
+    background-color: rgba(230, 230, 230, 1); */
 }
 
-#comment .button {
+#copy {
     background-color: gold;
 }
 
