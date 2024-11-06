@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resources</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../assets/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html">
+            <h1>Nellis Auction</h1>
+        </a>
+    </header>
+
+    <main>
+
+        <div class="grid-container" id="dashboard">
+            <div class="grid-item" id="comments">
+                <div class="grid-item-title">
+                    <h2>Quick Comments</h2>
+                </div>
+                <div class="grid-item-content grid-container">
+                    <div onclick="handleCopy(this)" class="grid-item button">**NON-REFUNDABLE**</div>
+                    <div onclick="handleCopy(this)" class="grid-item button">**PARTS ONLY**</div>
+                    <div onclick="handleCopy(this)" class="grid-item button">**FACTORY SEALED**</div>
+                    <div onclick="handleCopy(this)" class="grid-item button">**ITEM IS DIFFERENT FROM STOCK PHOTO**</div>
+                    <div onclick="handleCopy(this)" class="grid-item button">**TRUCK/TRAILER PICK UP ONLY**</div>
+                    <div onclick="handleCopy(this)" class="grid-item button">**TESTED FOR POWER, UNABLE TO TEST  FURTHER FUNCTIONS**</div>
+                    <div onclick="handleCopy(this)" class="grid-item button">**(EXP: ) NON-REFUNDABLE**</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a target="_blank" href="https://www.linkedin.com/in/denton-flake-1253b01a9">
+            <h6>Created by: @dentonflake</h6>
+        </a>
+    </footer>
+
+    <script>
+        function handleCopy(element) {
+            var text = element.textContent;
+            navigator.clipboard.writeText(text);
+        }
+    </script>
+</body>
+
+</html>

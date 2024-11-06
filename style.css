@@ -1,0 +1,37 @@
+#dashboard {
+    width: 100%;
+    max-width: 1000px;
+
+    grid-template-areas:
+        'announcements announcements'
+        'goals general'
+        'processing processing';
+}
+
+#announcements {
+    grid-area: announcements;
+}
+
+#general {
+    grid-area: general;
+}
+
+#processing {
+    grid-area: processing;
+}
+
+#goals {
+    grid-area: goals;
+}
+
+@media only screen and (max-width: 875px) {
+    #dashboard {
+        max-width: none;
+
+        grid-template-areas:
+            'announcements'
+            'general'
+            'goals'
+            'processing';
+    }
+}
